@@ -14,4 +14,11 @@ WHERE Invoice.BillingCountry = "Brazil"```
 WHERE Employee.Title = "Sales Support Agent"```
 1. ```SELECT BillingCountry FROM Invoice
 GROUP BY Invoice.BillingCountry```
+1. ```SELECT * FROM Invoice
+JOIN Customer ON Invoice.CustomerId = Customer.CustomerId
+Where Invoice.BillingCountry = "Brazil"```
+1. ```Select  Employee.FirstName ||" "||Employee.LastName AS "Name" , Employee.EmployeeId, Invoice.* FROM Employee
+Join Customer ON Employee.EmployeeId = Customer.SupportRepId
+Join  Invoice ON Customer.CustomerId = Invoice.CustomerId
+ORDER BY Employee.EmployeeId```
 1. 

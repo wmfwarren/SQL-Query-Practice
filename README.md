@@ -12,4 +12,6 @@ JOIN Customer ON Invoice.CustomerId = Customer.CustomerId
 WHERE Invoice.BillingCountry = "Brazil"```
 1. ```SELECT  FirstName ||" " || LastName AS Name, Title FROM Employee
 WHERE Employee.Title = "Sales Support Agent"```
-1. ```
+1. ```SELECT BillingCountry FROM Invoice
+GROUP BY Invoice.BillingCountry```
+1. 
